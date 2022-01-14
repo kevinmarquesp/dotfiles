@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Reload the pane
+Comment=
+Exec=xfce4-panel -r
+Icon=view-grid
+Path=
+Terminal=true
+StartupNotify=false

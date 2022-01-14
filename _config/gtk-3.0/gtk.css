@@ -1,0 +1,26 @@
+.xfce4-panel {
+    border-radius: 5px;
+}
+
+#pager-2 .horizontal {
+    border-radius: 100px;
+    background-color: #4c566a;
+    margin: 2px;
+}
+#pager-2 #xfce-panel-toggle-button:checked {
+    border-radius: 100px;
+    background-color: #81a1c1;
+}
+
+#clock-3 * {
+    /* border-radius: 100px; */
+    margin: 2px;
+}
+
+#wavelan-1 *,
+#pulseaudio-4,
+#power-manager-plugin-5 *,
+#xfce4-clipman-plugin-6 {
+    border-radius: 100px;
+    margin: 2px;
+}
