@@ -1,4 +1,4 @@
-# Setup created to be beatyfull and fast at the same time 💪
+## Setup created to be beatyfull and fast at the same time 💪
 
 
 ### What's inside?
