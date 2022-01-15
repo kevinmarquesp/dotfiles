@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+
+tmux_dir=~/.dotfiles/tmux_secs
+
+
+cd $tmux_dir
+
+# Style config of FZF and remove file extension
+sec_file=$(
+    fzf \
+        --border sharp \
+        --margin 15% \
+        --padding 10% \
+        --info inline \
+        --prompt 'SEARCH: ' \
+        --pointer '**' \
+        --ansi \
+        --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue' \
+    | cut -d. -f1
+) 
+
+if [[ $sec_file ]]; then
+    tmuxinator $sec_file
+fi
+

@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+
+vim_dir=~/.dotfiles/vim_secs
+
+
+cd $vim_dir
+
+# Style config of FZF
+sec_file=$(
+    fzf \
+        --border sharp \
+        --margin 15% \
+        --padding 10% \
+        --info inline \
+        --prompt 'SEARCH: ' \
+        --pointer '**' \
+        --ansi \
+        --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue'
+)
+
+# Open section if $sec_file is not null
+if [[ $sec_file ]]; then
+    if [ $1 == "-v" ] || [ $1 == "--vim" ]; then
+        vim -S $sec_file
+    else
+        nvim -S $sec_file
+    fi
+fi
+

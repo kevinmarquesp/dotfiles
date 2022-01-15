@@ -1,23 +1,5 @@
 #!/usr/bin/env bash
 
-# layout e040,283x69,0,0[283x48,0,0,47,283x20,0,49{96x20,0,49,48,92x20,97,49,49,93x20,190,49,50}]]
-
-# tmux split-window -v -p 30
-# tmux split-window -h -p 66
-# tmux split-window -h -p 50
-# tmux select-pane -L
-# tmux select-pane -L
-# tmux select-pane -U
-
-# if [ $1 == "-t" ] || [ $1 == "--two" ]; then
-#     # layout 9a90,283x69,0,0[283x48,0,0{141x48,0,0,51,141x48,142,0,55},283x20,0,49{96x20,0,49,52,92x20,97,49,53,93x20,190,49,54}]]
-
-#     tmux split-window -h
-#     tmux select-pane -L
-# fi
-
-# clear
-
 
 case $1 in
     -i)
@@ -41,7 +23,7 @@ case $1 in
         tmux select-pane -L
     ;;
 
-    *)
+    **)
         tmux split-window -h
         tmux split-window -v
 
