@@ -62,5 +62,3 @@ alias r="ranger"
 
 # Fuzzy file finder
 alias fzf="fzf --border sharp --margin 10% --padding 5% --info inline --prompt 'SEARCH: ' --pointer '**' --ansi --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue'"
-
-

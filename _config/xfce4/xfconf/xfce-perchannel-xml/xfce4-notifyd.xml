@@ -10,6 +10,7 @@
     <property name="known_applications" type="array">
       <value type="string" value="discord"/>
       <value type="string" value="Electron"/>
+      <value type="string" value="fr.handbrake.ghb"/>
       <value type="string" value="hp-systray"/>
       <value type="string" value="MSM Notifier"/>
       <value type="string" value="nm-applet"/>
