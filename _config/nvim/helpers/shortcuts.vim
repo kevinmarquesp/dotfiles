@@ -21,6 +21,12 @@ let mapleader="\<space>"
     " Save an section
     nnoremap <leader>M :mksession! ~/.dotfiles/vim_secs/
 
+    " Convert MarkDown to PDF
+    au BufWinEnter {*.md} nnoremap <leader>K :!pandoc % -o $(echo % \| cut -d. -f1).pdf; mupdf -r 72 $(echo % \| cut -d. -f1).pdf &<CR>
+    au BufWinEnter {*.md} nnoremap <leader>k MarkdownPreview<CR>
+
+
+
 
 " --- Buffers config
 

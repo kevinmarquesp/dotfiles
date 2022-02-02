@@ -38,7 +38,4 @@ set path+=**
 " Use 2 spaces indent for some files
 au BufWinEnter {*.html,*.json,*.jsx,*.tsx} setl shiftwidth=2 tabstop=2 expandtab
 
-" Run MarkdownPreview on load markdown files
-au BufWinEnter {*.md} MarkdownPreview
-
 

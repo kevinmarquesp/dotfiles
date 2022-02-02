@@ -3,11 +3,10 @@
 
     "eslint.autoFixOnSave": true,
     "eslint.fileTypes": [
-        "javascript", "javascriptreact", "typescript", "typescriptreact"
+        "javascriptreact", "typescript", "typescriptreact"
     ],
 
     "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
         "javascriptreact",
         "typescript",
         "typescriptreact"
@@ -15,7 +14,7 @@
     "tsserver.formatOnType": true,
     "coc.preferences.formatOnType": true,
 
-    "prettier.tabWidth": 4,
+    "prettier.tabWidth": 2,
     "eslint.options": {
         "space-before-function-parens": "off"
     }

@@ -53,37 +53,13 @@ call plug#end()
         let g:airline#extensions#tabline#enabled = 1
         let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-        let g:airline#extensions#tabline#left_sep = ''
-            let g:airline_left_sep = ''
-            let g:airline_right_sep = ''
+        let g:airline#extensions#tabline#left_sep = ''
+            let g:airline_left_sep = ''
+            let g:airline_right_sep = ''
 
-        let g:airline#extensions#tabline#left_alt_sep = ''
-            let g:airline_left_alt_sep = ''
-            let g:airline_right_alt_sep = ''
-
-" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
-" NERDTREE: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-" " 1) Close the tab if NERDTree is the only window remaining in it.
-" " 2) Exit Vim if NERDTree is the only window remaining in the only tab.
-" " 3) Open the existing NERDTree on each new tab.
-
-"     autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-"     autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-"     autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
-
-" " Change arrow indicators to folder icon
-"     autocmd BufWinEnter * silent NERDTreeMirror
-"         let g:NERDTreeDirArrowExpandable = ' '
-"         let g:NERDTreeDirArrowCollapsible = ' '
-"         let NERDTreeQuitOnOpen=1
-
-
+        let g:airline#extensions#tabline#left_alt_sep = '  '
+            let g:airline_left_alt_sep = '  '
+            let g:airline_right_alt_sep = '  '
 
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -133,16 +109,16 @@ autocmd FileType html,css,js EmmetInstall
 " FUZZY FILE FINDER: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     command! -bang -nargs=? -complete=dir Files
-        \ call fzf#vim#files(<q-args>, {'options': ['--color=bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue', '--padding=5%', '--prompt=SEARCH: ', '--pointer=**', '--info=inline', '--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+        \ call fzf#vim#files(<q-args>, {'options': ['--color=bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue', '--padding=5%', '--prompt=SEARCH: ', '--pointer=**', '--info=inline', '--preview', '~/.config/nvim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
 
     command! -bang -nargs=? -complete=dir Buffers
-        \ call fzf#vim#buffers(<q-args>, {'options': ['--color=bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue', '--padding=5%', '--prompt=SEARCH: ', '--pointer=**', '--info=inline', '--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+        \ call fzf#vim#buffers(<q-args>, {'options': ['--color=bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue', '--padding=5%', '--prompt=SEARCH: ', '--pointer=**', '--info=inline', '--preview', '~/.config/nvim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
 
     command! -bar -bang Marks
-        \ call fzf#vim#marks({'options': ['--color=bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue', '--padding=5%', '--prompt=SEARCH: ', '--pointer=**', '--info=inline', '--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+        \ call fzf#vim#marks({'options': ['--color=bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue', '--padding=5%', '--prompt=SEARCH: ', '--pointer=**', '--info=inline', '--preview', '~/.config/nvim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
 
     command! -bar -bang -range=%  Commits
-        \ let b:fzf_winview = winsaveview() | <line1>,<line2>call fzf#vim#commits(fzf#vim#with_preview({'options': ['--color=bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue', '--padding=5%', '--prompt=SEARCH: ', '--pointer=**', '--info=inline', '--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}'], 'placeholder': ''}), <bang>0)'
+        \ let b:fzf_winview = winsaveview() | <line1>,<line2>call fzf#vim#commits(fzf#vim#with_preview({'options': ['--color=bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue', '--padding=5%', '--prompt=SEARCH: ', '--pointer=**', '--info=inline', '--preview', '~/.config/nvim/plugged/fzf.vim/bin/preview.sh {}'], 'placeholder': ''}), <bang>0)'
 
 
 " fzf --border=sharp --margin 10% --padding 5% --info inline --prompt 'SEARCH: ' --pointer '**' --ansi --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:green'
