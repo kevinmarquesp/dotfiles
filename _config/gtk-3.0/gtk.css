@@ -24,3 +24,11 @@
     border-radius: 100px;
     margin: 2px;
 }
+
+
+VteTerminal,
+TerminalScreen,
+vte-terminal {
+    padding: 32px 34px;
+    -vteterminal-inner-border: 32px 34px;
+}

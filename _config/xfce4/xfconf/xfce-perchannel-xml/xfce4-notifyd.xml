@@ -8,6 +8,7 @@
   <property name="theme" type="string" value="Default"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="brave-browser"/>
       <value type="string" value="discord"/>
       <value type="string" value="Electron"/>
       <value type="string" value="fr.handbrake.ghb"/>
