@@ -35,6 +35,10 @@ end
 
 -- 🤨 Custom config (for some reason, I can't put plugins config in plugin file...)
 
+vim.cmd [[
+    set cursorline breakindent formatoptions=1 lbr
+]]
+
 vim.opt.confirm = true
 vim.opt.wrap = false
 

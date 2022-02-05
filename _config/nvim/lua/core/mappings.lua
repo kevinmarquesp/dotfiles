@@ -95,7 +95,10 @@ M.misc = function()
         map("n", "<leader>s", ":vsplit <CR>")
         map("n", "<leader>i", ":split <CR>")
 
-        map("n", "gg", "gg=G")
+        map("n", "<leader>gg", "gg=G")
+
+        -- To save sections
+        map("n", "<leader>MM", ":mksession! ~/.dotfiles/vim_secs/")
 
         map("n", "<leader>1", ":setl expandtab tabstop=2 shiftwidth=2 softtabstop=2 <CR>")
         map("n", "<leader>2", ":setl expandtab tabstop=4 shiftwidth=4 softtabstop=4 <CR>")

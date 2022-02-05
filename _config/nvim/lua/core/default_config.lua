@@ -157,7 +157,7 @@ M.mappings = {
         -- multiple mappings can be given for esc_termmode, esc_hide_termmode
 
         -- get out of terminal mode
-        esc_termmode = { "<C-l>" },
+        esc_termmode = { ",," },
 
         -- get out of terminal mode and hide it
         esc_hide_termmode = { "<C-h>" },
