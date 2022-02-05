@@ -45,6 +45,7 @@ export EDITOR="nvim"
 alias grep="grep --colour=auto"
 alias tree="tree --dirsfirst -F"
 alias sublime="/opt/sublime_text/sublime_text"
+alias cmatrix="unimatrix -c blue -s 98 -a -b -o"
 
 
 # Git helpers
@@ -61,4 +62,4 @@ alias pyserver="python -m http.server 3000"
 alias r="ranger"
 
 # Fuzzy file finder
-alias fzf="fzf --border sharp --margin 10% --padding 5% --info inline --prompt 'SEARCH: ' --pointer '**' --ansi --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue'"
+alias fzf="fzf --border sharp --margin 10% --padding 5% --info inline --prompt 'SEARCH: ' --pointer '**' --ansi --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:gray'"
