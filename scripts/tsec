@@ -16,7 +16,7 @@ sec_file=$(
         --prompt 'SEARCH: ' \
         --pointer '**' \
         --ansi \
-        --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue' \
+        --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:gray' \
     | cut -d. -f1
 ) 
 

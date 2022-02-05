@@ -16,7 +16,7 @@ sec_file=$(
         --prompt 'SEARCH: ' \
         --pointer '**' \
         --ansi \
-        --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:blue'
+        --color 'bg+:-1,pointer:green,fg+:green,hl:yellow,border:gray'
 )
 
 # Open section if $sec_file is not null
