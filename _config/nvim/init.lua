@@ -39,9 +39,6 @@ vim.cmd [[
     set cursorline breakindent formatoptions=1 lbr
 ]]
 
-vim.opt.confirm = true
-vim.opt.wrap = false
-
 vim.g.user_emmet_leader_key = ","
 
 print(" ────────── Shut the fuck up and start coding 🔥 ──────────")

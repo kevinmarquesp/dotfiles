@@ -27,6 +27,8 @@ M.options = {
     undofile = true,
     fillchars = { eob = " " },
     shadafile = vim.opt.shadafile,
+    confirm = true,
+    wrap = false,
 
     -- NvChad options
     nvChad = {
@@ -63,7 +65,6 @@ M.plugins = {
         colorizer = true, -- color RGB, HEX, CSS, NAME color codes
         comment = true, -- easily (un)comment code, language aware
         dashboard = true,
-        better_escape = true, -- map to <ESC> with no lag
         feline = true, -- statusline
         gitsigns = true,
         lspsignature = true, -- lsp enhancements
@@ -71,7 +72,7 @@ M.plugins = {
         cmp = true,
         snippets = true,
         nvimtree = true,
-        autopairs = true,
+        autopairs = true
     },
     options = {
         packer = {

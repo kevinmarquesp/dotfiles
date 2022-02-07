@@ -21,14 +21,6 @@ M.autopairs = function(override_flag)
 end
 
 
-M.better_escape = function()
-    require("better_escape").setup {
-        mapping = chadrc_config.mappings.plugins.better_escape.esc_insertmode,
-        timeout = chadrc_config.plugins.options.esc_insertmode_timeout,
-    }
-end
-
-
 M.blankline = function(override_flag)
     local default = {
         indentLine_enabled = 1,
