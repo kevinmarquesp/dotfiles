@@ -36,7 +36,8 @@ end
 -- 🤨 Custom config (for some reason, I can't put plugins config in plugin file...)
 
 vim.cmd [[
-    set cursorline breakindent formatoptions=1 lbr
+    set breakindent formatoptions=1 lbr
+    set sessionoptions=blank,buffers,curdir,folds,help,tabpages,winsize
 ]]
 
 vim.g.user_emmet_leader_key = ","

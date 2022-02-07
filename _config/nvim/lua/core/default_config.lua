@@ -24,11 +24,11 @@ M.options = {
     tabstop = 4,
     timeoutlen = 400,
     updatetime = 250,
-    undofile = true,
+    undofile = false,
     fillchars = { eob = " " },
     shadafile = vim.opt.shadafile,
     confirm = true,
-    wrap = false,
+    nowrap = true,
 
     -- NvChad options
     nvChad = {
@@ -112,8 +112,6 @@ M.plugins = {
     default_plugin_remove = {},
     install = nil,
 }
-
--- Don't use a single keymap twice
 
 --- MAPPINGS ----
 
@@ -225,7 +223,7 @@ M.mappings.plugins = {
 
     telescope = {
         buffers = "<leader>Pb",
-        find_files = "<leader>P",
+        find_files = "<leader>PP",
         find_hiddenfiles = "<leader>Pp",
         git_commits = "<leader>Pg",
         git_status = "<leader>Pgs",
